@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Postoperative Spinal Infection Risk Calculator - Preview</title>
+<style>
+body{font-family:Arial,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0;background:#fff;color:#202638}.wrap{max-width:1180px;margin:34px auto;padding:0 28px}h1{font-size:42px;margin:0 0 8px}.sub{font-size:18px;color:#667085;margin-bottom:34px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:38px}.card{border:1px solid #EAECF0;border-radius:18px;padding:26px;background:#fff;box-shadow:0 1px 5px rgba(16,24,40,.06)}.label{color:#667085;font-size:17px}.prob{font-size:72px;font-weight:820;line-height:1;margin:10px 0}.bar{height:11px;background:#EEF2F6;border-radius:999px;margin:16px 0 22px;overflow:hidden}.bar span{display:block;height:100%;width:53%;background:#2288e8}.context{background:#F9FAFB;border:1px solid #EAECF0;border-radius:14px;padding:17px 18px;color:#344054;font-size:17px;line-height:1.6}.badge{background:#FFFAEB;border:1px solid #FEDF89;color:#B54708;border-radius:16px;padding:22px 24px;font-size:24px;font-weight:780}.clinical{font-size:18px;line-height:1.7;color:#344054;margin-top:18px}.factor{border:1px solid #EAECF0;border-radius:14px;padding:19px;background:#fff;box-shadow:0 1px 4px rgba(16,24,40,.04);margin-top:26px}.factor h3{margin:0 0 12px;font-size:21px}.factor div{font-size:17px;color:#344054;line-height:1.6;margin:.35rem 0}.note{color:#667085;border-top:1px solid #EAECF0;margin-top:34px;padding-top:16px;font-size:15px}@media(max-width:850px){.grid{grid-template-columns:1fr}.prob{font-size:58px}h1{font-size:34px}}
+</style></head><body><div class="wrap">
+<h1>Postoperative Spinal Infection Risk Calculator</h1>
+<div class="sub">A clinical decision-support calculator for estimating early postoperative infection risk after spinal internal fixation surgery.</div>
+<h2>Result</h2>
+<div class="grid">
+  <div class="card">
+    <div class="label">Estimated probability of postoperative infection</div>
+    <div class="prob">53.0%</div>
+    <div class="bar"><span></span></div>
+    <div class="context"><b>How to read this:</b><br>In plain language, this result means that among patients with a similar early postoperative laboratory pattern, approximately 53 out of 100 would be estimated as having postoperative infection. For context, the average infection rate in the development cohort was about 16 out of 100. Therefore, this is about 3.3 times the cohort average, so it should be treated as clinically concerning rather than ignored as “only around half”.</div>
+  </div>
+  <div>
+    <div class="badge">Clinically concerning probability</div>
+    <div class="clinical"><b>Clinical interpretation:</b> This is not a confirmed diagnosis, but the estimated probability is clearly higher than the average postoperative infection rate in the development cohort. Closer reassessment, wound evaluation, repeat inflammatory markers, and microbiological or imaging work-up should be considered when clinically indicated.</div>
+  </div>
+</div>
+<div class="grid">
+  <div class="factor"><h3>Findings that increased this estimate</h3><div>• Early postoperative D-dimer rise: 1.5 same unit as entered</div><div>• CRP change from day 1 to day 7: 15.4 mg/L</div><div>• Postoperative day 1 white blood cell count: 11 ×10⁹/L</div></div>
+  <div class="factor"><h3>Findings that lowered this estimate</h3><div>• Early postoperative platelet count change: −44 ×10⁹/L</div></div>
+</div>
+<div class="note">This calculator is intended to support, not replace, clinical assessment. The result should be interpreted together with wound findings, symptoms, inflammatory markers, cultures, imaging, and the treating clinician’s judgment.</div>
+</div></body></html>

@@ -1,0 +1,133 @@
+{
+  "app_title": "Postoperative Spinal Infection Risk Calculator",
+  "subtitle": "A clinical decision-support calculator for estimating early postoperative infection risk after spinal internal fixation surgery.",
+  "features": [
+    "L3",
+    "WBC2",
+    "ΔCRP_2to4",
+    "ΔD-D dim_1to2",
+    "ΔESR_2to3",
+    "ΔN%_3to4",
+    "ΔPLT_1to2"
+  ],
+  "feature_info": {
+    "L3": {
+      "display": "Lymphocyte count on postoperative day 4",
+      "short": "Postoperative day 4 lymphocyte count",
+      "plain": "lymphocyte count on postoperative day 4",
+      "unit": "×10⁹/L",
+      "clinical_meaning": "Reflects postoperative immune status."
+    },
+    "WBC2": {
+      "display": "White blood cell count on postoperative day 1",
+      "short": "Postoperative day 1 white blood cell count",
+      "plain": "white blood cell count on postoperative day 1",
+      "unit": "×10⁹/L",
+      "clinical_meaning": "Reflects early systemic inflammatory response after surgery."
+    },
+    "ΔCRP_2to4": {
+      "display": "Change in CRP from postoperative day 1 to day 7",
+      "short": "CRP change from day 1 to day 7",
+      "plain": "change in C-reactive protein from postoperative day 1 to postoperative day 7",
+      "unit": "mg/L",
+      "clinical_meaning": "Reflects whether postoperative inflammation is resolving or persisting."
+    },
+    "ΔD-D dim_1to2": {
+      "display": "D-dimer change from before surgery to postoperative day 1",
+      "short": "Early postoperative D-dimer rise",
+      "plain": "change in D-dimer from before surgery to postoperative day 1",
+      "unit": "same unit as entered",
+      "clinical_meaning": "Enter postoperative day 1 D-dimer minus preoperative D-dimer. This reflects the early postoperative coagulation/fibrinolysis response."
+    },
+    "ΔESR_2to3": {
+      "display": "Change in ESR from postoperative day 1 to day 4",
+      "short": "ESR change from day 1 to day 4",
+      "plain": "change in erythrocyte sedimentation rate from postoperative day 1 to postoperative day 4",
+      "unit": "mm/h",
+      "clinical_meaning": "Reflects subacute inflammatory change after surgery."
+    },
+    "ΔN%_3to4": {
+      "display": "Neutrophil percentage change from postoperative day 4 to day 7",
+      "short": "Neutrophil percentage trend from day 4 to day 7",
+      "plain": "change in neutrophil percentage from postoperative day 4 to postoperative day 7",
+      "unit": "percentage points",
+      "clinical_meaning": "Enter postoperative day 7 neutrophil percentage minus postoperative day 4 neutrophil percentage."
+    },
+    "ΔPLT_1to2": {
+      "display": "Platelet count change from before surgery to postoperative day 1",
+      "short": "Early postoperative platelet count change",
+      "plain": "change in platelet count from before surgery to postoperative day 1",
+      "unit": "×10⁹/L",
+      "clinical_meaning": "Enter postoperative day 1 platelet count minus preoperative platelet count."
+    }
+  },
+  "stats": {
+    "L3": {
+      "mean": 1.2963839333222058,
+      "sd": 0.5348341497886782,
+      "median": 1.21,
+      "q1": 0.9424999999999999,
+      "q3": 1.5275,
+      "min": 0.21,
+      "max": 4.59
+    },
+    "WBC2": {
+      "mean": 11.798951306644213,
+      "sd": 9.654972240228362,
+      "median": 10.9963145152854,
+      "q1": 8.7225,
+      "q3": 13.467500000000001,
+      "min": 3.25,
+      "max": 199.0
+    },
+    "ΔCRP_2to4": {
+      "mean": 10.618681504788443,
+      "sd": 50.567758269894256,
+      "median": 15.42982206344605,
+      "q1": -7.75,
+      "q3": 33.5754117965698,
+      "min": -274.7,
+      "max": 181.6
+    },
+    "ΔD-D dim_1to2": {
+      "mean": 2.2526326036929136,
+      "sd": 3.6754845669375027,
+      "median": 1.5004266500473,
+      "q1": 0.82,
+      "q3": 2.3275,
+      "min": -9.06,
+      "max": 32.27
+    },
+    "ΔESR_2to3": {
+      "mean": 24.67155516627173,
+      "sd": 23.904602141976913,
+      "median": 22.0,
+      "q1": 9.543377560566935,
+      "q3": 38.0,
+      "min": -42.0,
+      "max": 107.0
+    },
+    "ΔN%_3to4": {
+      "mean": -4.6020872045248895,
+      "sd": 7.540506663353963,
+      "median": -4.338639879226685,
+      "q1": -8.342997550964355,
+      "q3": -1.0249999999999975,
+      "min": -33.5,
+      "max": 23.3
+    },
+    "ΔPLT_1to2": {
+      "mean": -36.95342259203314,
+      "sd": 53.68949440037713,
+      "median": -34.0,
+      "q1": -61.4097356796265,
+      "q3": -9.0,
+      "min": -291.0,
+      "max": 549.0
+    }
+  },
+  "threshold": 0.3,
+  "disclaimer": "This calculator is intended to support, not replace, clinical assessment. The result should be interpreted together with wound findings, symptoms, inflammatory markers, cultures, imaging, and the treating clinician’s judgment.",
+  "baseline_risk": 0.16210045662100456,
+  "baseline_label": "Average infection rate in the development cohort"
+}
